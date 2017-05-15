@@ -1,0 +1,18 @@
+---
+applications:
+- disk_quota: 1024M
+  name: KubeDemo2
+  domain: stage1.mybluemix.net
+  host: Kube-Demo-2
+  memory: 256M
+  instances: 1
+  timeout: 180
+  buildpack: sdk-for-nodejs
+  command: npm start
+  services:
+    - watson-visual-recognition-01
+    - watson-speech-to-text-01
+    - Cloudant NoSQL DB-6i
+    - Object Storage-nx
+  env:
+    OPENAPI_SPEC: /swagger/api

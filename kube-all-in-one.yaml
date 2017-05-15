@@ -1,0 +1,61 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: KubeDemo2-secret
+type: Opaque
+data:
+  VCAP_APPLICATION: eyJhcHBsaWNhdGlvbl9pZCI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCIsImFwcGxpY2F0aW9uX25hbWUiOiJLdWJlRGVtbzIiLCJhcHBsaWNhdGlvbl91cmlzIjpbIiJdLCJhcHBsaWNhdGlvbl92ZXJzaW9uIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIiwibGltaXRzIjp7ImRpc2siOjUxMiwiZmRzIjoxNjM4NCwibWVtIjoxMDI0fSwibmFtZSI6Ikt1YmVEZW1vMiIsInNwYWNlX2lkIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIiwic3BhY2VfbmFtZSI6IiIsInVyaXMiOlsiIl0sInVzZXJzIjpudWxsLCJ2ZXJzaW9uIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIn0=
+  VCAP_SERVICES: eyJjbG91ZGFudE5vU1FMREIiOlt7ImNyZWRlbnRpYWxzIjp7InVzZXJuYW1lIjoiM2M3NzA3ZTQtZTk1MC00NzY0LThmZTAtYTc3YTQ1ZGFkZDRmLWJsdWVtaXgiLCJwYXNzd29yZCI6IjE5OTFhMGRlNGFjMzE0ZjM5M2YyNmIwZWZjNGQwZGFhNGRmNmM3YjVjMGFjOTM0NjU1MjY2YzZjNzA3Zjk5OWYiLCJob3N0IjoiM2M3NzA3ZTQtZTk1MC00NzY0LThmZTAtYTc3YTQ1ZGFkZDRmLWJsdWVtaXgiLCJwb3J0Ijo0NDMsInVybCI6Imh0dHBzOi8vM2M3NzA3ZTQtZTk1MC00NzY0LThmZTAtYTc3YTQ1ZGFkZDRmLWJsdWVtaXg6MTk5MWEwZGU0YWMzMTRmMzkzZjI2YjBlZmM0ZDBkYWE0ZGY2YzdiNWMwYWM5MzQ2NTUyNjZjNmM3MDdmOTk5ZkAzYzc3MDdlNC1lOTUwLTQ3NjQtOGZlMC1hNzdhNDVkYWRkNGYtYmx1ZW1peC5jbG91ZGFudC5jb20ifSwic3lzbG9nX2RyYWluX3VybCI6bnVsbCwibGFiZWwiOiJjbG91ZGFudE5vU1FMREIiLCJwcm92aWRlciI6bnVsbCwicGxhbiI6IkxpdGUiLCJuYW1lIjoiQ2xvdWRhbnQgTm9TUUwgREItNmkiLCJ0YWdzIjpbImRhdGFfbWFuYWdlbWVudCIsImlibV9jcmVhdGVkIiwibGl0ZSIsImlibV9kZWRpY2F0ZWRfcHVibGljIl19XSwiT2JqZWN0LVN0b3JhZ2UiOlt7ImNyZWRlbnRpYWxzIjp7ImF1dGhfdXJsIjoiaHR0cHM6Ly9pZGVudGl0eS5vcGVuLnNvZnRsYXllci5jb20iLCJwcm9qZWN0Ijoib2JqZWN0X3N0b3JhZ2VfNDUzNTk1Y2FfMDEyM180ZjhmX2I0ZjhfNjQzYjFmMjNmOGM5IiwicHJvamVjdElkIjoiMzJmOTFjZGFkZGZhNDlkOWEyOGJjMDliOGNiNzk1N2IiLCJyZWdpb24iOiJkYWxsYXMiLCJ1c2VySWQiOiIyZTgzZjY5MTk5ZDE0MGI2YjBlMDkzMTFiMzk0Y2Q0MCIsInVzZXJuYW1lIjoiYWRtaW5fMDllZDU0YzNiMTRlNDI4ZjBiNDU5MzI3OGVmNjljMzMzYmQxMWVkZiIsInBhc3N3b3JkIjoiS2gsUlVuVW1EKH1DMXE4VCIsImRvbWFpbklkIjoiMmRmNjM3M2M1NDllNDlmODk3M2ZiNmQyMmFiMThjMWEiLCJkb21haW5OYW1lIjoiNjM5MzQ3Iiwicm9sZSI6ImFkbWluIn0sInN5c2xvZ19kcmFpbl91cmwiOm51bGwsImxhYmVsIjoiT2JqZWN0LVN0b3JhZ2UiLCJwcm92aWRlciI6bnVsbCwicGxhbiI6InN0YW5kYXJkIiwibmFtZSI6Ik9iamVjdCBTdG9yYWdlLW54IiwidGFncyI6WyJzdG9yYWdlIiwiaWJtX3JlbGVhc2UiLCJpYm1fY3JlYXRlZCJdfV19
+  WATSON_SPEECH_TO_TEXT: eyJjcmVkZW50aWFscyI6eyJ1cmwiOiJodHRwczovL3N0cmVhbS53YXRzb25wbGF0Zm9ybS5uZXQvc3BlZWNoLXRvLXRleHQvYXBpIiwidXNlcm5hbWUiOiI2YWQxYWY3NS05NzIzLTQ0ZDctYWIxNS0xYjlkYmVmNGMzYmYiLCJwYXNzd29yZCI6IlFlWDNIeThCdWZKdyJ9LCJzeXNsb2dfZHJhaW5fdXJsIjpudWxsLCJsYWJlbCI6InNwZWVjaF90b190ZXh0IiwicHJvdmlkZXIiOm51bGwsInBsYW4iOiJzdGFuZGFyZCIsIm5hbWUiOiJzcGVlY2gtdG8tdGV4dC0wMSJ9
+  WATSON_VISUAL_RECOGNITION: eyJjcmVkZW50aWFscyI6eyJ1cmwiOiJodHRwczovL2dhdGV3YXktYS53YXRzb25wbGF0Zm9ybS5uZXQvdmlzdWFsLXJlY29nbml0aW9uL2FwaSIsIm5vdGUiOiJUaGlzIGlzIHlvdXIgcHJldmlvdXMgZnJlZSBrZXkuIElmIHlvdSB3YW50IGEgZGlmZmVyZW50IG9uZSwgcGxlYXNlIHdhaXQgMjQgaG91cnMgYWZ0ZXIgdW5iaW5kaW5nIHRoZSBrZXkgYW5kIHRyeSBhZ2Fpbi4iLCJhcGlfa2V5IjoiZjMwMjA3YzIwNjUzZTA2OGI4NWIwMTRhNmNkNTI3ZTNjNTc4ZTYzOCJ9LCJzeXNsb2dfZHJhaW5fdXJsIjpudWxsLCJsYWJlbCI6IndhdHNvbl92aXNpb25fY29tYmluZWQiLCJwcm92aWRlciI6bnVsbCwicGxhbiI6ImZyZWUiLCJuYW1lIjoidmlzdWFsLXJlY29nbml0aW9uLTAxIiwidGFncyI6WyJ3YXRzb24iLCJpYm1fY3JlYXRlZCIsImlibV9kZWRpY2F0ZWRfcHVibGljIl19
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: KubeDemo2-deployment
+spec:
+  replicas: 3
+  revisionHistoryLimit: 1
+  template:
+    metadata:
+      labels:
+        app: KubeDemo2
+    spec:
+      containers:
+      - name: KubeDemo2
+        image: registry.ng.bluemix.net/antonal/KubeDemo2:latest
+        env:
+          - name: VCAP_APPLICATION
+            valueFrom:
+              secretKeyRef:
+                name: KubeDemo2-secret
+                key: VCAP_APPLICATION
+          - name: VCAP_SERVICES
+            valueFrom:
+              secretKeyRef:
+                name: KubeDemo2-secret
+                key: VCAP_SERVICES
+          - name: WATSON_SPEECH_TO_TEXT
+            valueFrom:
+              secretKeyRef:
+                name: KubeDemo2-secret
+                key: WATSON_SPEECH_TO_TEXT
+          - name: WATSON_VISUAL_RECOGNITION
+            valueFrom:
+              secretKeyRef:
+                name: KubeDemo2-secret
+                key: WATSON_VISUAL_RECOGNITION
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: KubeDemo2-service
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+  selector:
+    app: KubeDemo2
